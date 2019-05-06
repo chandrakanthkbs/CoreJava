@@ -1,4 +1,4 @@
-package com.com.datastructure;
+package com.datastructure;
 
 class BinaryTreeNode {
 

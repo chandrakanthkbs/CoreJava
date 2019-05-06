@@ -21,9 +21,9 @@ public class MyCallable  {
         Callable<String> tokenCallable = new TokenCallable();
         
         Future<String> futureEmail = executor.submit(emailCallable);
-        Future<String> futureToken = executor.submit(tokenCallable);
+        executor.submit(tokenCallable);
         String str = futureEmail.get();
-        System.err.println("Completed"+str);
+        System.err.println("Completed : "+str);
         
         //shut down the executor service now
         executor.shutdown();
